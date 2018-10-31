@@ -1,0 +1,256 @@
+body {
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-family: "Apple Symbols";
+    font-size: 60px;
+    border: thick;
+    color: #ca4444 ;
+}
+
+h2{
+    width: auto;
+    margin-left: 40px;
+    margin-right:40px;
+    font-family: "Apple Symbols";
+    font-size: 35px;
+    color: #ca4444 ;
+}
+
+h3{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right:40px;
+    width: auto;
+    font-family: "Apple Symbols";
+    font-size: 23px;
+    color: #162c44 ;
+}
+
+#e1{
+    float:left;
+    width: auto;
+}
+
+#e2{
+    float: right;
+    width: auto;
+}
+
+
+h4 {
+    text-align: justify;
+    margin-left: 40px;
+    margin-right:40px;
+    font-family: "Apple Symbols";
+    font-size: 35px;
+    color: #ca4444 ;
+}
+
+
+h5 {
+    text-align: right;
+    margin-left: 40px;
+    margin-right:40px;
+    font-family: "Apple Symbols";
+    font-size: 15px;
+    color: #162c44 ;
+}
+
+h6{
+    font-family: "Apple Symbols";
+    text-align: center;
+    font-size: 25px;
+    color: white ;
+}
+
+h7{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right:40px;
+    width: auto;
+    font-family: "Apple Symbols";
+    font-size: 20px;
+    color: #162c44 ;
+    width: auto;
+    display: block;
+}
+
+img {
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+
+#help{
+    width: 600px;
+    height: 200px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    font-size: 60px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background-position: 20% center;
+    margin-right: 1px;
+    margin-left:40px;
+    background-image: url(opioid/heroine2.jpg);
+}
+#help:hover{
+    width: 600px;
+    height: 200px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background-position: 20% center;
+    font-size:62px;
+    margin-right: 1px;
+    margin-left:40px;
+    background-image: url(opioid/heroine2_hover.jpg);
+
+}
+
+#stories{
+    width: 600px;
+    height: 200px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    font-size: 60px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background-position: 40% center;
+    margin-right:40px;
+    margin-left: 1px;
+    background-image: url(opioid/stories.jpg);
+}
+#stories:hover{
+    width: 600px;
+    height: 200px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    background-position: 40% center;
+    font-size:62px;
+    margin-right:40px;
+    margin-left: 1px;
+    background-image: url(opioid/stories_hover.jpg);
+}
+
+#ssa{
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    font-size: 25px;
+    padding: 8px 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #162c44;
+}
+#ssa:hover{
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    padding: 8px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size:25px;
+    background-color: #13263a;
+}
+
+#rehab{
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    font-size: 25px;
+    padding: 8px 30px;
+    text-align: center;
+    background-color: #162c44;
+}
+#rehab:hover{
+    max-width: 100%;
+    width: 400px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    padding: 8px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size:25px;
+    background-color: #13263a;
+}
+
+#opiates{
+    max-width: 100%;
+    width: 450px;
+
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    font-size: 25px;
+    padding: 8px 30px;
+    text-align: center;
+    background-color: #162c44;
+}
+#opiates:hover{
+    max-width: 100%;
+    width: 450px;
+
+    height: 100px;
+    border: none;
+    color: white;
+    font-style: oblique;
+    padding: 8px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size:25px;
+    background-color: #13263a;
+}
+
+a {
+    text-decoration: none;
+}
+
+#imgText {
+    width: auto;
+    text-align: center;
+    margin:auto;
+    position: relative;
+    font-family: Sans-Serif;
+    font-size: 55px;
+    /*font-weight: lighter;*/
+    color: white ;
+    top:105px;
+}
+#e1 {
+    width:100%;
+    height:240px;
+    background-position: 10% center;
+    background-image: url(opioid/support.jpg);
+}
+
+body {
+    margin: 0px;
+}

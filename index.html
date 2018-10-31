@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>OXYLAB</title>
+</head>
+<body>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    }
+</script>
+<h1> OXY LAB </h1>
+
+<h2>THE OPIOID EPIDEMIC </h2>
+<h3>In the 1990s, healthcare providers began to heavily prescribe Opioids. This surge in pain relief prescriptions resulted in an increase in the drug’s misuse. In 2016, 116 people died of opioid overdoses daily. Consequences of these highly addictive drugs are prenatal use leading to infant withdrawal, organ malfunction, and fatal overdose.  Although every demographic is affected by the epidemic, young adults are the most at risk due to their need to relieve stress, pain, as well as their desire to experiment. Unfortunately, opioid death rates continue to climb to this day. </h3>
+
+<h2>MAP AND DATA</h2><h3> Opioid overdose death rate by state and county. </h3>
+
+<div id='map' style='margin-left: 40px; margin-right: 40px ;width: auto; height: 700px;'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFnZGFnb3UiLCJhIjoiY2pncGY2a3BuMDV4ODJ6bjMzcmE3NHNuOSJ9.E8WYYUGGGFwBbC6bN4-GUQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/magdagou/cjgy0g30i00202rruxu0b2joc'
+    });
+</script>
+
+<br>
+
+<h3> Opioid overdose death rate per 100,000 population</h3>
+
+<img style="margin-left: 70px; margin-right:40px;"src="opioid/graph.png">
+
+<h5>data provided by United States Census bureau</h5>
+
+<br>
+
+<table style="width:100px">
+    <tr>
+        <th><button id="help" onclick="window.location.href='help.html'" type="button">HELP & RESOURCES</button></th>
+        <th><button id="stories"onclick="window.location.href='stories.html'" type="button">STORIES</button></th>
+    </tr>
+</table>
+<br>
+<br>
+<h2 style="text-align: center">ABOUT ME</h2>
+<h3 style="text-align: center">
+    I am a student at Berkeley High School who felt extremely unsatisfied with the lack of coverage on the opioid epidemic. I decided to take action by creating a website that provides information on the epidemic as well as visually striking data. I believe this website has the power to help addicts, those who love them, and researchers.</h3>
+<br>
+<table style="width:100%">
+    <tr>
+        <th><img style="border-radius: 100%; width:175px; height: 175px"src="opioid/pictures/magda.jpg"></th>
+    </tr>
+    <tr>
+        <th><h3 style="text-align: center">Magda Gourinchas</h3></th>
+    </tr>
+    <tr>
+        <th><h7 style="text-align: center">Founder</h7></th>
+    </tr>
+</table>
+<br>
+<br>
+</body>
+</html>
+
