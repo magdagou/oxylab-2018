@@ -78,6 +78,18 @@ h7{
     display: block;
 }
 
+h8{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right:40px;
+    width: auto;
+    font-family: "Apple Symbols";
+    font-size: 20px;
+    color: #162c44 ;
+    width: auto;
+    display: block;
+}
+
 img {
     width: 90%;
     margin-left: 40px;
@@ -86,7 +98,7 @@ img {
 
 
 #help{
-    width: 600px;
+    width: 580px;
     height: 200px;
     border: none;
     color: white;
@@ -101,7 +113,7 @@ img {
     background-image: url(opioid/heroine2.jpg);
 }
 #help:hover{
-    width: 600px;
+    width: 580px;
     height: 200px;
     border: none;
     color: white;
@@ -118,7 +130,7 @@ img {
 }
 
 #stories{
-    width: 600px;
+    width: 580px;
     height: 200px;
     border: none;
     color: white;
@@ -133,7 +145,7 @@ img {
     background-image: url(opioid/stories.jpg);
 }
 #stories:hover{
-    width: 600px;
+    width: 580px;
     height: 200px;
     border: none;
     color: white;
